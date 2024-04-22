@@ -1,3 +1,3 @@
-[submodule "themes/archer"]
-	path = themes/archer
+[submodule "themes"]
+	path = themes
 	url = https://github.com/pangrongdian/PrdBlogTheme.git

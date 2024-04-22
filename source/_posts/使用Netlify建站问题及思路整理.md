@@ -20,37 +20,48 @@ tags: 问题及思路整理
 # NetLify建站的思路整理
 
 ## Hexo的安装
+
 ### 1.全局安装、区域安装 Hexo
+
 *（暂时还不知道有什么太大的区别）*
+
 ```bash
 
 $ npm install hexo -g
 
 ```  
+
 ### 2.Hexo初始化及使用
 
 *（简单来说就是初始化项目、创建文档、启动服务、清空缓存、项目渲染、）*
-> *初始化项目*
+
+>  *初始化项目*
+
+
 
 ``` bash
 $ hexo init "Project Name" 
 ```
+
 > *创建文档*
 
 ```bash
 $ hexo new "Article Name"
 ```
->*启动服务
+
+> *启动服务
 
 ``` bash
 $ hexo server
 ```
->*清空缓存*
+
+> *清空缓存*
 
 ```bash
 $ hexo clean
 ```
->*项目渲染*
+
+>  *项目渲染*
 
 ```bash
 $ hexo generate
@@ -70,12 +81,13 @@ $ hexo deploy
 ### 1.账号注册
 
 - 域名注册，Nelify注册，Cloudfare注册，Github注册
-> *（如果有当我没说）<br>特别注意需要 __魔法__ 才能注册,当然也可以使用gitee *
+
+> *（如果有当我没说）特别注意需要 __魔法__ 才能注册,当然也可以使用gitee *
 
 ### 2.建站流程
 - 1. 在GIthub上创建两个仓库，*一个作为写文章*，*一个作为存放主题*。
-- 2. 本地新建Hexo项目，初始化**Git**，并添加远程仓库<br>*(创建仓库别名，方便后续辨别)*<br>
-按照自己需求修改项目配置文件
+
+- 2. 本地新建Hexo项目，初始化**Git**，并添加远程仓库 *(创建仓库别名，方便后续辨别)* 按照自己需求修改项目配置文件
 
 ```bash
 $ git init 
@@ -86,22 +98,32 @@ $ git remote add Alias "Remote Repository Url"
 $ git push --set-upstream Alias main
 // main 是分支，不知道当前分支，用git branch 查看
 ```
+
 - 3. 选择喜欢的主题，下载到本地，同样按照上面一样初始化仓库，作为主题的存放。
->**（在这里如果出现，触发Github的安全扫描了，点击他返回的url进行授权就可以了）**
+
+*（在这里如果出现，触发Github的安全扫描了，点击他返回的url进行授权就可以了）*
 
 - 4. 域名映射，在域名控制台，设置域名映射，规则可以自定义，*（控制台会有提示）*，一般来说**@**规则是就可以直接通过域名访问到。
 
-- 5. Netlify建站，在网站注册完后，授权GitHub仓库，按照默认流程走完就行。<br>
+- 5. Netlify建站，在网站注册完后，授权GitHub仓库，按照默认流程走完就行。
+
+
 *（构建命令最好自定义一个，这样方便我们构建）
+
 ```bash
 "netlify": "npm run clean && npm run build"
 ```
+
 - 6. 设置CNAME域名映射，CDN加速，用CloudFare，填入我们在NetLify中定义的域名，这样国内就可以访问到。<br>
 还有在域名控制台，替换cdn服务器为cloudfare提供的。
 
 - 7. 最后在Nelify中找到Domain management 中完成SSL证书的配置。*（这样可以使用https进行访问）*
 
-**好的到这里<br>可以拉风地使用帅气的域名进行访问啦**
+---
+
+*好的到这里可以拉风地使用帅气的域名进行访问啦*
+
+
 
 ## 深刻斗争过的问题
 
@@ -110,27 +132,34 @@ $ git push --set-upstream Alias main
 > 这个配置文件，是构建的时候会自动拉取的。如果是只是下载克隆，他就用不了
 
 >ps:解决办法如下
+
 >先手动添加上 *（.gitmodules）*文件
+
+
 ```bash
 [submodule "themes/hexo-theme-matery"]
 	path = themes/hexo-theme-matery
 	url = https://github.com/pangrongdian/PrdBlogTheme.git
 ```
+
  ```bash
     $git submodule update --init --recursive
     $git submodule add --depth=1 "theme Repository Url"  themes/hexo-theme-matery
   ```
+
+
 >如果这里不用自己的theme Repository *(开始的时候创建过)*，那无论怎么修改配置文件都不会在网站上起作用。！！！
 
 - Netfily构建的时候，如果有大的更新一定要，在 构建选项中清楚缓存,不然会一直使用之前的构建，就看不到新的效果。
+
 > Deploy->Option->Clear cache and retry with latest branch commit
 
 --- 
-到这里搭建个人博客就告一段落啦。也要开始自我探索。
+到这里搭建个人博客就告一段落啦。也要开始自我探索啦。
 
 # 结语
 临近大学的尾声，才堪堪入门，专业所学。如此长时间患得患失，得知不均，也终于在试错中回到心中。<br>
-也是到如今，才明白，**"故余虽愚卒或有所闻"**这求学中所释然的轻快。<br>
+也是到如今，才明白，故余虽愚卒或有所闻,这求学中所释然的轻快。<br>
 
 而我们终将走向未来，也不必与当下执着，所谓君子不争，是以行制性，修身。君子不救，是以律制心，养德。正念起身，我所无他，唯行是先。
 

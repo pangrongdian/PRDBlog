@@ -62,7 +62,7 @@ tags: Test
  `输入值的隐式要求为：两边之和大于第三边、三边均不相等、两边相等但不等于第三边、三边相等；`
  `输出值的等价类为：不构成三角形、一般三角形、等腰三角形、等边三角形`
 
-![等价类图](https://doc.shiyanlou.com/courses/3266/1446347/4b88799c561a46be417c6954c1d40baa-0/wm)
+![等价类图](https://azure-tired-mandrill-459.mypinata.cloud/ipfs/Qmbrd4qpPYfwHFT9ixd43ZvCB57MYVgMVtRkLKupxgfxtz?pinataGatewayToken=rFrISfWlt-HcsJ_53UjK2NUtFiPwNTUE4K8PqLFUtYhyFThhDJM7MOjsIit0oDwj)
 
 - 2. 列出条件中可能组合的情况
   `①②③④⑤⑥：输出一般三角形`
@@ -73,9 +73,9 @@ tags: Test
 
 - 3. 选择测试数据，编写测试用例
 
-![等价类条件组合图](https://doc.shiyanlou.com/courses/3266/1446347/320a73d430c01c00abe80a2b53367188-0/wm)
+![等价类条件组合图](https://azure-tired-mandrill-459.mypinata.cloud/ipfs/QmQK4yzNECdRDWfQHLi62HmT6nGpjQn9uVn45y6ZeYe74H?pinataGatewayToken=rFrISfWlt-HcsJ_53UjK2NUtFiPwNTUE4K8PqLFUtYhyFThhDJM7MOjsIit0oDwj)
 
-![用例参考](https://img-blog.csdnimg.cn/direct/3058f426755a4b7a807916c519128fb9.png)
+![用例参考](https://azure-tired-mandrill-459.mypinata.cloud/ipfs/QmXr7JbJogGPMZQCBFTNTqug6foye9QkXjuRUN9ckmSxZq?pinataGatewayToken=rFrISfWlt-HcsJ_53UjK2NUtFiPwNTUE4K8PqLFUtYhyFThhDJM7MOjsIit0oDwj)
 
 #### 等价类划分法注意
 - 等价类中的一类数据在效果上总是等价的。

@@ -16,4 +16,4 @@ tags: Resume
 课，大三开始参加项目。
 
 
-![ Resume ](https://azure-tired-mandrill-459.mypinata.cloud/ipfs/QmQeU44rnYLa35DMzur8Vy1kwpES179xYnSA4PFmGTgVUQ?pinataGatewayToken=rFrISfWlt-HcsJ_53UjK2NUtFiPwNTUE4K8PqLFUtYhyFThhDJM7MOjsIit0oDwj)
+![ Resume ](https://azure-tired-mandrill-459.mypinata.cloud/ipfs/QmaKrgPtfXuwo6DqujkGv7sUCyrXpeeiD85QpP8v86TUEJ?pinataGatewayToken=rFrISfWlt-HcsJ_53UjK2NUtFiPwNTUE4K8PqLFUtYhyFThhDJM7MOjsIit0oDwj)

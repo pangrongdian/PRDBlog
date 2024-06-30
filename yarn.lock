@@ -674,7 +674,7 @@ hexo-wordcount@^6.0.1:
   resolved "https://registry.npmmirror.com/hexo-wordcount/-/hexo-wordcount-6.0.1.tgz"
   integrity sha512-tbo2P9xRWEKQmRf7+XuPjx9It1MnaE26nA+EEb2DN39gK1x+26W7Nm4Iyp4AugQjBWYYDx7OLn4gp1WFxQpQew==
 
-hexo@^7.0.0:
+hexo@^7.2.0:
   version "7.2.0"
   resolved "https://registry.npmmirror.com/hexo/-/hexo-7.2.0.tgz"
   integrity sha512-RYIzl7jfG0i2jH/k5IZg4C1anyHfmKHNUsBKIn9LU0V3iQ0WQrwuOLFDJwaZDenqmzHYJhAVCGAkrBDfF/IlVg==

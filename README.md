@@ -1,6 +1,7 @@
 ## 更新主题
 
 ### 第一种操作
+
 ```bash
 cd themes
 git pull
